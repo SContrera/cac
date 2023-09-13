@@ -1,0 +1,8 @@
+body {
+    /*background-color: aquamarine;*/
+    background: #fff url(../img/fondo..jpg) no-repeat fixed;
+    background-size: cover;
+    font-family:'Lato', Arial, Helvetica, sans-serif;
+    color: rgb(250, 245, 245);
+    
+}
