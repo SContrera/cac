@@ -1,138 +1,148 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon/favicon.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" target="_blank" href="https://github.com/SContrera">Portfolio</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon/favicon.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" target="_blank"
+              href="https://github.com/SContrera">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/centrar.html">Centrar</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Opciones
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/ganar.html">Ganar, ganar, ganar</a></li>
+              <li><a class="dropdown-item" href="#">Matar</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/centrar.html">Centrar</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Opciones
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="pages/ganar.html">Ganar, ganar, ganar</a></li>
-                  <li><a class="dropdown-item" href="#">Matar</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Reír</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Desactivado</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Reír</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Búsqueda</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Desactivado</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Búsqueda</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
-    <h1>Propiedades de FLEX</h1>
+  <h1>Propiedades de FLEX</h1>
+  <p>
+  <ul>
+    <li> <a href="pages/flexDirection.html">Flex-direction</a></li>
+    <li><a href="pages/flexWrap.html"> Flex-wrap</a></li>
+    <li> <a href="pages/flexFlow.html">Flex-flow</a></li>
+    <li> <a href="pages/justCont.html">Justify-content</a></li>
+    <li> <a href="pages/alIT.html">Align-items</a></li>
+    <li> <a href="pages/alCont.html">Align-content</a></li>
+
+    </li>
+    </p>
+
+    <img src="https://freesvg.org/img/1688293839retro-video-game.png" alt="videogame" width="360px" weight="360px">
+
+    <section>
+      <h4 id="flexDir"> Flex-Direction</h4>
+      <p>
+        The flex-direction property defines in which direction the container wants to stack the flex items.
+      </p>
+      <style>
+        .flex-container {
+          display: flex;
+          flex-direction: column;
+          background-color: DodgerBlue;
+        }
+
+        .flex-container>div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+      </style>
+
+
+      <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+
+      <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+
+
+      <h4 id="flexWrap">Flex-Wrap</h4>
+      <p>
+        The flex-wrap property specifies whether the flex items should wrap or not.
+
+        The examples below have 12 flex items, to better demonstrate the flex-wrap property.
+      </p>
+
+      <h4 id="flexFlow">Flex-Flow</h4>
+      <p>
+        The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
+      </p>
+
+      <h4 id="justCont"> Justify-content</h4>
+      <p>
+        The justify-content property is used to align the flex items:
+      </p>
+
+      <h4 id="alIt"> Align-items</h4>
+      <p>
+        The align-items property is used to align the flex items.
+      </p>
+
+      <h4 id="alCont"> Align-content</h4>
+      <p>
+        The align-content property is used to align the flex lines.
+      </p>
+    </section>
+
+    <h1>Comandos de GIT</h1>
+
     <p>
-      <ul>
-          <li> <a href="pages/flexDirection.html">Flex-direction</a></li>
-          <li><a href="pages/flexWrap.html"> Flex-wrap</a></li>
-          <li> <a href="pages/flexFlow.html">Flex-flow</a></li>
-          <li> <a href="pages/justCont.html">Justify-content</a></li>
-          <li> <a href="pages/alIT.html">Align-items</a></li>
-          <li> <a href="pages/alCont.html">Align-content</a></li>
+    <ol>
+      <li>Git add .</li>
+      <li>Git commit -m</li>
+      <li>Git push</li>
 
-      </li>
-    </p>  
-    
-      <img src="https://freesvg.org/img/1688293839retro-video-game.png" alt="videogame" width="360px" weight="360px" >
+    </ol>
+    </p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
 
-      <section> 
-              <h4 id="flexDir"> Flex-Direction</h4>
-                <p>
-                  The flex-direction property defines in which direction the container wants to stack the flex items.
-                </p>
-                <style>
-                  .flex-container {
-                    display: flex;
-                    flex-direction: column;
-                    background-color: DodgerBlue;
-                  }
-                  
-                  .flex-container > div {
-                    background-color: #f1f1f1;
-                    width: 100px;
-                    margin: 10px;
-                    text-align: center;
-                    line-height: 75px;
-                    font-size: 30px;
-                  }
-                  </style>
-                  
-               
-                  <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
-                  
-                  <div class="flex-container">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>  
-                  </div>
-      
-      
-               <h4 id="flexWrap">Flex-Wrap</h4>
-               <p>
-                The flex-wrap property specifies whether the flex items should wrap or not.
+</body>
+<footer>© 2023-CaC. Todos los derechos reservados</footer>
 
-                The examples below have 12 flex items, to better demonstrate the flex-wrap property.
-               </p>
-      
-                <h4 id="flexFlow">Flex-Flow</h4>
-                <p>
-                  The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties.
-                </p>
-      
-               <h4 id="justCont"> Justify-content</h4>
-                <p> 
-                  The justify-content property is used to align the flex items:
-                </p>
-
-                <h4 id="alIt"> Align-items</h4>
-                  <p> 
-                    The align-items property is used to align the flex items.
-                  </p>
-                
-                <h4 id="alCont"> Align-content</h4>
-                  <p>
-                    The align-content property is used to align the flex lines.
-                  </p>
-       </section>
-
-     <h1>Comandos de GIT</h1>
-
-        <p> 
-          <ol>
-              <li>Git add .</li>
-              <li>Git commit -m</li>
-              <li>Git push</li>
-          
-           </ol>
-     </p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
-  </body>
-  <footer>© 2023-CaC. Todos los derechos reservados</footer>
 </html>
